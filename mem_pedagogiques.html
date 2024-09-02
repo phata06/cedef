@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des Membres de la Commission Pédagogique de CEDEF</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
+        .header img {
+            max-height: 50px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin: 0;
+            flex: 1;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #eee;
+            margin: 10px 0;
+            padding: 10px;
+            border-left: 5px solid #007bff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        li:nth-child(odd) {
+            background-color: #ddd;
+        }
+        .member-details {
+            flex: 1;
+        }
+        .member-name {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .member-role {
+            color: #555;
+        }
+        .member-phone {
+            display: block;
+            margin-top: 5px;
+            font-size: 0.9em;
+            color: #777;
+        }
+        .member-photo {
+            position: relative;
+            display: inline-block;
+        }
+        .member-photo img {
+            max-height: 50px;
+            border-radius: 50%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .member-photo:hover img {
+            transform: scale(2); /* Agrandir l'image */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            z-index: 10; /* Assurez-vous que l'image agrandie soit au-dessus des autres éléments */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="sen_fr.jpg" alt="Logo Gauche">
+            <h1>Membres de la Commission Pédagogique de CEDEF</h1>
+            <img src="https://drive.google.com/file/d/1KE11K95mT3HfWa4ZBtjprcOQDSzERV8V/uc?export=view&id=" alt="Logo Droite">
+        </div>
+        <ul>
+            <li>
+                <div class="member-details">
+                    <span class="member-name">Moustapha Ndiaye</span>
+                    <span class="member-role"> - Président</span>
+                    <span class="member-phone">Tél: +221 77 123 45 67</span>
+                </div>
+                <div class="member-photo">
+                    <img src="ndiaye_moustapha.jpeg" alt="Moustapha Ndiaye">
+                </div>
+            </li>
+            <li>
+                <div class="member-details">
+                    <span class="member-name">Assane Niang</span>
+                    <span class="member-role"> - Adj-président</span>
+                    <span class="member-phone">Tél: +221 77 234 56 78</span>
+                </div>
+                <div class="member-photo">
+                    <img src="assane_niang.png" alt="Assane Niang">
+                </div>
+            </li>
+            <li>
+                <div class="member-details">
+                    <span class="member-name">Serigne Modou Dienne</span>
+                    <span class="member-role"> - Membre</span>
+                    <span class="member-phone">Tél: +221 77 345 67 89</span>
+                </div>
+                <div class="member-photo">
+                    <img src="serigne_modou_dienne.png" alt="Serigne Modou Dienne">
+                </div>
+            </li>
+            <li>
+                <div class="member-details">
+                    <span class="member-name">Baye Cheikh Diagne</span>
+                    <span class="member-role"> - Membre</span>
+                    <span class="member-phone">Tél: +221 77 456 78 90</span>
+                </div>
+                <div class="member-photo">
+                    <img src="baye_cheikh_diagne.png" alt="Baye Cheikh Diagne">
+                </div>
+            </li>
+            <li>
+                <div class="member-details">
+                    <span class="member-name">Djily Diagne</span>
+                    <span class="member-role"> - Membre</span>
+                    <span class="member-phone">Tél: +221 77 567 89 01</span>
+                </div>
+                <div class="member-photo">
+                    <img src="djily_diagne.png" alt="Djily Diagne">
+                </div>
+            </li>
+            <li>
+                <div class="member-details">
+                    <span class="member-name">Aidara Nguirane</span>
+                    <span class="member-role"> - Membre</span>
+                    <span class="member-phone">Tél: +221 77 678 90 12</span>
+                </div>
+                <div class="member-photo">
+                    <img src="aidara_nguirane.png" alt="Aidara Nguirane">
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
