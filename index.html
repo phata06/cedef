@@ -15,10 +15,20 @@
             background-color: #007bff;
             color: #fff;
             padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            margin: 0 20px;
+        }
+        .logo img {
+            max-height: 50px;
         }
         .navbar {
             display: flex;
             justify-content: center;
+            flex-grow: 1;
             padding: 10px;
         }
         .navbar a {
@@ -44,12 +54,18 @@
 </head>
 <body>
     <header>
+        <div class="logo">
+            <img src="sen_fr.jpg" alt="Logo Gauche">
+        </div>
         <div class="navbar">
             <a href="com_pedagogique.html">Commission Pédagogique</a>
             <a href="#">Commission Sociale</a>
             <a href="#">Commission Communication</a>
             <a href="#">Secrétariat</a>
             <a href="#">Trésorier</a>
+        </div>
+        <div class="logo">
+            <img src="logo_cedef.png" alt="Logo Droite">
         </div>
     </header>
     
