@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualités - Association CEDEF</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .news-item {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #eee;
+            border-left: 5px solid #007bff;
+            position: relative;
+            overflow: hidden;
+            transition: background-color 0.3s ease;
+        }
+        .news-item:hover {
+            background-color: #ddd;
+        }
+        .news-item img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+            animation: fadeIn 1s ease-out;
+        }
+        .news-item h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .news-item p {
+            color: #555;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        /* Media queries for responsive design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            .news-item h2 {
+                font-size: 1.5em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .news-item h2 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Actualités de l'Association CEDEF</h1>
+        
+        <div class="news-item">
+            <img src="nouveau_bureau.jpg" alt="Nouveau Bureau">
+            <h2>Renouvellement du Bureau</h2>
+            <p>Le bureau de CEDEF est récemment renouvelé (date de renouvellement : Dimanche 21/07/2024). La prise de poste du nouveau bureau est officielle le 01/09/2024. Le président sortant est Moustapha Ndiaye (nouveau président de la commission pédagogique) et la nouvelle présidente est Tolla Diop (ancienne vice-présidente). Son vice-président est Mame Mor Thiam (ancien président de la commission sociale).</p>
+            <p>Voici les images des présidents sortants et entrants :</p>
+            <img src="moustapha_ndiaye.jpg" alt="Moustapha Ndiaye" style="max-height: 200px;">
+            <img src="tolla_diop.jpg" alt="Tolla Diop" style="max-height: 200px;">
+            <img src="mame_mor_thiam.jpg" alt="Mame Mor Thiam" style="max-height: 200px;">
+        </div>
+        
+        <div class="news-item">
+            <h2>Ouverture des Classes</h2>
+            <p>Les classes ouvrent à partir du 2 septembre 2024. Le CEDEF souhaite une bonne rentrée à tous les étudiants. Le collectif est là pour vous accompagner dans toutes les démarches administratives.</p>
+        </div>
+        
+        <div class="news-item">
+            <img src="remerciement_ameedad.jpg" alt="Remerciement AMEEDAD">
+            <h2>Assistance de l'AMEEDAD</h2>
+            <p>Nous avons demandé l'assistance de l'AMEEDAD pour résoudre un problème de logement. Nous remercions AMEEDAD pour leur soutien précieux.</p>
+        </div>
+    </div>
+</body>
+</html>
