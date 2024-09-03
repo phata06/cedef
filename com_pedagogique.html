@@ -11,8 +11,20 @@
             margin: 0;
             padding: 0;
         }
+        .header {
+            background-color: #f56242; /* Couleur de fond du header */
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
+        .header img {
+            max-height: 50px;
+        }
         .nav-bar {
-            background-color: #007bff; /* Couleur de fond de la barre de navigation */
+            background-color: #333; /* Couleur de fond de la barre de navigation */
             padding: 10px 0;
         }
         .nav-bar ul {
@@ -26,27 +38,12 @@
             margin: 0 15px;
         }
         .nav-bar a {
-            color: #fff;
+            color: #e66d02; /* Couleur du texte des liens dans la barre de navigation */
             text-decoration: none;
             font-size: 1em;
-            padding: 5px 10px; /* Ajouter un peu de padding pour l'élément cliquable */
-            display: inline-block;
         }
         .nav-bar a:hover {
             text-decoration: underline;
-            background-color: transparent; /* Assurez-vous qu'il n'y a pas de fond lors du survol */
-        }
-        .header {
-            background-color: #f56242; /* Couleur de fond du header */
-            color: #fff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            box-sizing: border-box;
-        }
-        .header img {
-            max-height: 50px;
         }
         .container {
             max-width: 800px;
@@ -144,9 +141,10 @@
 <body>
     <div class="nav-bar">
         <ul>
+            <li><a href="index.html">Accueil</a></li>
             <li><a href="#membres">Membres</a></li>
-            <li><a href="activite_pedagogique.html">Activités</a></li>
-            <li><a href="arrivee_france.html">Mon arrivée en France</a></li>
+            <li><a href="#activites">Activités</a></li>
+            <li><a href="#arrivee-france">Mon arrivée en France</a></li>
         </ul>
     </div>
 
