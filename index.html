@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil - Association CEDEF</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- FontAwesome -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -121,6 +122,7 @@
             padding: 20px;
             margin: 20px 0;
             border-radius: 5px;
+            position: relative;
         }
         .contact h2 {
             margin-top: 0;
@@ -132,19 +134,20 @@
             display: block;
         }
 
-        /* Style pour le footer */
-        .footer {
-            text-align: center;
-            margin: 20px 0;
-            padding: 10px;
-            background-color: #e66d02; /* Changement de couleur */
-            color: #fff;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+        /* Styles pour les icônes des réseaux sociaux */
+        .social-media {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
         }
-        .footer p {
-            margin: 0;
+        .social-media a {
+            margin: 0 10px;
+            color: #fff;
+            font-size: 24px; /* Taille des icônes */
+            transition: opacity 0.3s ease;
+        }
+        .social-media a:hover {
+            opacity: 0.8; /* Effet de survol pour les icônes */
         }
     </style>
 </head>
@@ -154,12 +157,13 @@
             <img src="sen_fr.jpg" alt="Logo Gauche">
         </div>
         <div class="navbar">
+            <a href="index.html">Accueil</a>
             <a href="actualite.html">Actualités</a>
             <a href="com_pedagogique.html">Pédagogique</a>
             <a href="com_sociale.html">Sociale</a>
             <a href="#">Communication</a>
             <a href="secretariat.html">Secrétariat</a>
-            <a href="finance.html">Finance</a> <!-- Nouvel onglet ajouté -->
+            <a href="finance.html">Finance</a>
             <a href="tresorier.html">Autre</a>
         </div>
         <div class="logo">
@@ -202,9 +206,18 @@
             <strong>Secrétaire :</strong>
             <p>06 05 59 85 90</p>
         </div>
+
+        <!-- Icônes des réseaux sociaux -->
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
     </div>
 
     <!-- Section footer -->
-
+    <div class="footer">
+        <p>&copy; 2024 Association CEDEF. Tous droits réservés.</p>
+    </div>
 </body>
 </html>
